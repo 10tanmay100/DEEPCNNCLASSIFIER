@@ -22,13 +22,13 @@ stages:
     - artifacts/prepare_base_model
 
   training:
-      cmd: python src/deepClassifier/pipeline/stage_02_prepare_base_model.py
+      cmd: python src/deepClassifier/pipeline/stage_03_training.py
       deps:
       - src/deepClassifier/pipeline/stage_03_training.py
+      - src/deepClassifier/components/prepare_callback.py
       - configs/config.yaml
       - artifacts/data_ingestion/PetImages
       - artifacts/prepare_base_model
-      - src/deepClassifier/components/prepare_callback.py
       params:
         - IMAGE_SIZE
         - INCLUDE_TOP
