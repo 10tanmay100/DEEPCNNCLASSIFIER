@@ -1,6 +1,6 @@
 from deepClassifier.constants import *
 from deepClassifier.utils import *
-from deepClassifier.entity import DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig,TrainingConfig
+from deepClassifier.entity import DataIngestionConfig,PrepareBaseModelConfig,PrepareCallbacksConfig,TrainingConfig,Evaluation_config
 class ConfigurationManager:
     def __init__(
         self, 
@@ -79,3 +79,7 @@ class ConfigurationManager:
         )
 
         return training_config
+    
+    
+    def get_evaluation_config(self) -> Evaluation_config:
+        return Evaluation_config(model_path=self.config.training.trained_model_path,training_data=self.config.data_ingestion.unzip_dir,params_batch_size=self.params.BATCH_SIZE,params_image_size=self.params.IMAGE_SIZE)
