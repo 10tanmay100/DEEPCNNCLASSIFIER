@@ -14,4 +14,6 @@ types-PyYAML
 types-requests
 scipy
 tensorflow-gpu
+mlflow==1.26.1
+streamlit
 -e .

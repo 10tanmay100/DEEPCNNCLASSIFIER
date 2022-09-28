@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 
-
+mlflow_dir/
 .vscode/
 *.jpg
 *.zip

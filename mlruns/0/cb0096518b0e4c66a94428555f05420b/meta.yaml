@@ -1,0 +1,15 @@
+artifact_uri: file:///E:/Ineuron/Project/Deep%20Learning%20Project/DeepCNNClassifier/DEEPCNNCLASSIFIER/mlruns/0/cb0096518b0e4c66a94428555f05420b/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: cb0096518b0e4c66a94428555f05420b
+run_uuid: cb0096518b0e4c66a94428555f05420b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1664364007025
+status: 1
+tags: []
+user_id: Administrator
