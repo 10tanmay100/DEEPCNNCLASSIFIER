@@ -1,2 +1,3 @@
-def test_demo():
-    assert True
+from deepClassifier.entity import DataIngestionConfig
+
+    
